@@ -1,19 +1,19 @@
-// import { MongoClient } from "mongodb";
+import { MongoClient } from "mongodb";
 
-// const connectionString = process.env.ATLAS_URI || "";
+const connectionString = process.env.ATLAS_URI || "";
 
-// const client = new MongoClient(connectionString);
+const client = new MongoClient(connectionString);
 
-// let conn;
+let conn;
 
-// try {
-//   client.connect().then((connection) => {
-//     conn = connection;
-//   });
-// } catch(e) {
-//   console.error(e);
-// }
+try {
+  client.connect().then((connection) => {
+    conn = connection;
+  });
+} catch(e) {
+  console.error(e);
+}
 
-// let db = conn.db("countdown_timer_flutter");
+let db = conn.db("countdown_timer_flutter");
 
-// export default db;
+export default db;
