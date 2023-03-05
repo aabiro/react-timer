@@ -10,7 +10,7 @@ try {
   // client.connect().then((connection) => {
   //   conn = connection;
   // });
-  client.connect(url, function(error, client){
+  client.connect('mongodb+srv://swdx:ik0w48cPpTNBhwSs@cluster0.fobyvqj.mongodb.net/?retryWrites=true&w=majority', function(error, client){
     if (error) return console.log(error);
     console.log("Database connected.");
   });
