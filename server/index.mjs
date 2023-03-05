@@ -4,7 +4,7 @@ import express from "express";
 // import "express-async-errors";
 // import countdowns from "./routes/countdowns.mjs";
 
-// const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 5050;
 const app = express();
 
 // app.use(cors());
@@ -30,4 +30,4 @@ app.get("/",function(req,res){
         res.send("<h1>Oi mate</h1>");
 });
 
-app.listen(80);
+app.listen(PORT);
