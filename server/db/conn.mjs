@@ -4,13 +4,13 @@ const connectionString = process.env.ATLAS_URI || "";
 
 const client = new MongoClient(connectionString);
 
-let conn;
-try {
-  conn = await client.connect();
-} catch(e) {
-  console.error(e);
-}
+// let conn;
+// try {
+//   conn = await client.connect();
+// } catch(e) {
+//   console.error(e);
+// }
 
-let db = conn.db("countdown_timer_flutter");
+// let db = conn.db("countdown_timer_flutter");
 
 export default db;
