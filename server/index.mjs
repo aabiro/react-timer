@@ -1,11 +1,11 @@
-// import express from "express";
+import express from "express";
 // import cors from "cors";
 // import "./loadEnvironment.mjs";
 // import "express-async-errors";
 // import countdowns from "./routes/countdowns.mjs";
 
 // const PORT = process.env.PORT || 5050;
-// const app = express();
+const app = express();
 
 // app.use(cors());
 // app.use(express.json());
@@ -23,8 +23,7 @@
 //   console.log(`Server is running on port: ${PORT}`);
 // });
 
-var express = require("express");
-var app = express();
+
 
 
 app.get("/",function(req,res){
