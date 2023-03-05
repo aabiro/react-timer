@@ -7,12 +7,19 @@ const client = new MongoClient(connectionString);
 let conn;
 
 try {
-  client.connect().then((connection) => {
-    conn = connection;
+  // client.connect().then((connection) => {
+  //   conn = connection;
+  // });
+  client.connect(url, function(error, client){
+    if (error) return console.log(error);
+    console.log("Database connected.");
   });
 } catch(e) {
   console.error(e);
 }
+
+
+
 
 let db = conn.db("countdown_timer_flutter");
 
