@@ -30,4 +30,6 @@ app.get("/",function(req,res){
         res.send("<h1>Oi mate</h1>");
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});
